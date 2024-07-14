@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px 2px rgba(255, 255, 255, 1);
+    border-radius: 20px;
+
+}
+
+
+.jobs {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 600px;
+    height: 600px;
+    overflow-y: auto;
+
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    margin: 10px;
+    padding: 0;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+}
+
+::placeholder {
+    padding-right: 0;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    height: inherit;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3px;
+    color: bisque;
+    background-image: radial-gradient(#021027, #000000);
+
+}
+
+.Head {
+    font-size: 1.5rem;
+    background-image: linear-gradient(120deg, #4e54c8, #8f94fb);
+    -webkit-background-clip: text; /* For Safari */
+    background-clip: text;
+    color: transparent; 
+}
+
+.more-info {
+    background-color: rgb(8, 66, 46);
+    border-radius: 5px;
+    font-size: 0.8rem;
+    width: fit-content;
+    transition: transform 0.3s ease;
+}
+
+.more-info:hover {
+    transform: scale(1.05);
+    background-color: cadetblue;
+}
+
+
+* {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #e6dede transparent; /* Scrollbar handle and track color */
+}
+
+/* For more specific customization in Firefox */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
